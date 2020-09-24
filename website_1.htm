@@ -2,102 +2,108 @@
 <html lang="en-US">
 <head>
   <title>Animals Page</title>
-  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1>Animals</h1>
+  <div class="jumbotron text-center">
+    <h1>Animals</h1>
+    <p style="text-align:center" class="bold">
+      <a href="#birds">Birds</a>
+      <a href="#dogs">Dogs</a>
+      <a href="#animals">More Animals</a>
+      <a href="#classifications">Animal Classification</a>
+    </p>
+    <br />
+  </div>
 
-  <p style="text-align:center" class="bold">
-    <a href="#birds">Birds</a>
-    <a href="#dogs">Dogs</a>
-    <a href="#animals">More Animals</a>
-    <a href="#classifications">Animal Classification</a>
-  </p>
-  <br />
-
-
-  <h2 id="birds">Birds</h2>
-  <a href="https://en.wikipedia.org/wiki/Bird;" target="_blank">
-    <img src="photos/bird photo.jpg" alt="Bird Link" class="section-photo" />
-  </a>
-  <p class="photo-caption"><i><small>Click on the photo for more information on birds</small></i></p>
-  <br />
-  <h3>Information on Birds</h3>
-  <blockquote cite="https://en.wikipedia.org/wiki/Bird" class="info">
-    Birds are a group of warm-blooded vertebrates constituting the class Aves,
-    characterized by feathers, toothless beaked jaws, the laying of hard-shelled eggs,
-    a high metabolic rate, a four-chambered heart, and a strong yet lightweight
-    skeleton. Birds live worldwide and range in size from the 5 cm (2 in) bee
-    hummingbird to the 2.75 m (9 ft) ostrich. There are about ten thousand living
-    species, more than half of which are passerine, or "perching" birds. Birds have
-    wings whose development varies according to species; the only known groups without
-    wings are the extinct moa and elephant birds. Wings, which evolved from forelimbs,
-    gave birds the ability to fly, although further evolution has led to the loss
-    of flight in some birds, including ratites, penguins, and diverse endemic island
-    species. The digestive and respiratory systems of birds are also uniquely adapted
-    for flight. Some bird species of aquatic environments, particularly seabirds
-    and some waterbirds, have further evolved for swimming.
-  </blockquote>
-  <table>
-    <caption>Classifications</caption>
-    <tr>
-      <th>Catagory</th>
-      <th>Group</th>
-    </tr>
-    <tr>
-      <td>Domain</td>
-      <td>Eukarya</td>
-    </tr>
-    <tr>
-
-      <td>Kingdom</td>
-      <td>Anamalia</td>
-    </tr>
-    <tr>
-      <td>Phylum</td>
-      <td>Chordata</td>
-    </tr>
-    <tr>
-      <td>Class</td>
-      <td>Aves</td>
-    </tr>
-  </table>
-  <br />
-  <br />
-
-
-  <h2 id="dogs">Dogs</h2>
-  <a href="https://en.wikipedia.org/wiki/Dog;" target="_blank">
-    <img src="photos/dog photo.jpg" alt="Dog Link" class="section-photo" />
-  </a>
-  <p class="photo-caption"><i><small>Click on the photo for more information on dogs</small></i></p>
-  <br />
-  <h3>Information on Dogs</h3>
-  <blockquote cite="https://en.wikipedia.org/wiki/Dog" class="info">
-    The dog (Canis familiaris when considered a distinct species or Canis lupus
-    familiaris when considered a subspecies of the wolf) is a domesticated carnivore
-    of the family Canidae. It is part of the wolf-like canids, and is the most
-    widely abundant terrestrial carnivore. The dog and the extant gray wolf are
-    sister taxa as modern wolves are not closely related to the wolves that were
-    first domesticated, which implies that the direct ancestor of the dog is extinct.
-    The dog was the first species to be domesticated, and has been selectively bred
-    over millennia for various behaviors, sensory capabilities, and physical attributes.
-  </blockquote>
-  <br />
-  <h4 style="text-decoration:underline">Most Popular Dog Breeds</h4>
-  <ol>
-    <li>Labrador Retriever</li>
-    <li>Golden Retriever</li>
-    <li>Beagle</li>
-    <li>German Shepherd</li>
-    <li>Pembroke Welsh Corgi</li>
-    <li>Doberman</li>
-    <li>Border Collie</li>
-    <li>Belgian Bulldog</li>
-    <li>French Bulldog</li>
-    <li>Shiba Inu</li>
-  </ol>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 id="birds">Birds</h2>
+        <a href="https://en.wikipedia.org/wiki/Bird;" target="_blank">
+          <img src="photos/bird photo.jpg" alt="Bird Link" class="section-photo" />
+        </a>
+        <p class="photo-caption"><i><small>Click on the photo for more information on birds</small></i></p>
+        <br />
+        <h3>Information on Birds</h3>
+        <blockquote cite="https://en.wikipedia.org/wiki/Bird" class="info">
+          Birds are a group of warm-blooded vertebrates constituting the class Aves,
+          characterized by feathers, toothless beaked jaws, the laying of hard-shelled eggs,
+          a high metabolic rate, a four-chambered heart, and a strong yet lightweight
+          skeleton. Birds live worldwide and range in size from the 5 cm (2 in) bee
+          hummingbird to the 2.75 m (9 ft) ostrich. There are about ten thousand living
+          species, more than half of which are passerine, or "perching" birds. Birds have
+          wings whose development varies according to species; the only known groups without
+          wings are the extinct moa and elephant birds. Wings, which evolved from forelimbs,
+          gave birds the ability to fly, although further evolution has led to the loss
+          of flight in some birds, including ratites, penguins, and diverse endemic island
+          species. The digestive and respiratory systems of birds are also uniquely adapted
+          for flight. Some bird species of aquatic environments, particularly seabirds
+          and some waterbirds, have further evolved for swimming.
+        </blockquote>
+        <table>
+          <caption>Classifications</caption>
+          <tr>
+            <th>Catagory</th>
+            <th>Group</th>
+          </tr>
+          <tr>
+            <td>Domain</td>
+            <td>Eukarya</td>
+          </tr>
+          <tr>
+            <td>Kingdom</td>
+            <td>Anamalia</td>
+          </tr>
+          <tr>
+            <td>Phylum</td>
+            <td>Chordata</td>
+          </tr>
+          <tr>
+            <td>Class</td>
+            <td>Aves</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col">
+        <h2 id="dogs">Dogs</h2>
+        <a href="https://en.wikipedia.org/wiki/Dog;" target="_blank">
+          <img src="photos/dog photo.jpg" alt="Dog Link" class="section-photo" />
+        </a>
+        <p class="photo-caption"><i><small>Click on the photo for more information on dogs</small></i></p>
+        <br />
+        <h3>Information on Dogs</h3>
+        <blockquote cite="https://en.wikipedia.org/wiki/Dog" class="info">
+          The dog (Canis familiaris when considered a distinct species or Canis lupus
+          familiaris when considered a subspecies of the wolf) is a domesticated carnivore
+          of the family Canidae. It is part of the wolf-like canids, and is the most
+          widely abundant terrestrial carnivore. The dog and the extant gray wolf are
+          sister taxa as modern wolves are not closely related to the wolves that were
+          first domesticated, which implies that the direct ancestor of the dog is extinct.
+          The dog was the first species to be domesticated, and has been selectively bred
+          over millennia for various behaviors, sensory capabilities, and physical attributes.
+        </blockquote>
+        <br />
+        <h4 style="text-decoration:underline">Most Popular Dog Breeds</h4>
+        <ol>
+          <li>Labrador Retriever</li>
+          <li>Golden Retriever</li>
+          <li>Beagle</li>
+          <li>German Shepherd</li>
+          <li>Pembroke Welsh Corgi</li>
+          <li>Doberman</li>
+          <li>Border Collie</li>
+          <li>Belgian Bulldog</li>
+          <li>French Bulldog</li>
+          <li>Shiba Inu</li>
+        </ol>
+      </div>
+    </div>
+  </div>
 
   <h2 id="animals">More Animals</h2>
   <ul style="font-size:175%">
