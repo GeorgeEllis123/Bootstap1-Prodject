@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container">
+    <!-- Navbar need help-->
     <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -18,23 +19,36 @@
         <li class="nav-item">
           <a class="nav-link" href="#dogs">Dogs</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#animals">More Animals</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            More Animals
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Giraffe">Giraffe</a>
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Horse">Horse</a>
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Fish">Fish</a>
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Cat">Cat</a>
+            <a class="dropdown-item" href="https://en.wikipedia.org/wiki/Mouse">Mouse</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#classifications">Animal Classification</a>
         </li>
       </ul>
     </nav>
+
+    <!-- Title of Page -->
     <div class="jumbotron text-center">
       <h1 class="text-dark">Animals</h1>
       <br />
     </div>
+
+    <!-- Grids -->
     <div class="row">
       <div class="col">
         <h2 id="birds">Birds</h2>
         <a href="https://en.wikipedia.org/wiki/Bird;" target="_blank">
-          <img src="photos/bird photo.jpg" alt="Bird Link" class="section-photo" />
+          <img src="photos/bird photo.jpg" alt="Bird Link" class="rounded" style="width:400px;height:400px;" />
         </a>
         <p class="photo-caption"><i><small>Click on the photo for more information on birds</small></i></p>
         <br />
@@ -81,7 +95,7 @@
       <div class="col">
         <h2 id="dogs">Dogs</h2>
         <a href="https://en.wikipedia.org/wiki/Dog;" target="_blank">
-          <img src="photos/dog photo.jpg" alt="Dog Link" class="section-photo" />
+          <img src="photos/dog photo.jpg" alt="Dog Link" class="d-block rounded" style="width:400px;height:400px;" />
         </a>
         <p class="photo-caption"><i><small>Click on the photo for more information on dogs</small></i></p>
         <br />
