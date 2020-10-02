@@ -15,38 +15,15 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- <style>
+  <style>
   .carousel-inner img {
     width: 100%;
     height: 100%;
   }
-  </style> -->
+  </style>
 </head>
 
 <body>
-  <!-- Carousel -->
-  <div id="demo" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>
-
-    <!-- The slideshow need help-->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="photos/bird photo.jpg" alt="Bird 1" width="300" height="300">
-      </div>
-      <div class="carousel-item">
-        <img src="photos/bird photo 2.jpg" alt="Bird 2" width="300" height="300">
-      </div>
-      <div class="carousel-item">
-        <img src="photos/bird photo 3.jpg" alt="Bird 3" width="300" height="300">
-      </div>
-    </div>
-
     <!-- Left and right controls -->
     <a class="carousel-control-prev" href="#demo" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -56,16 +33,15 @@
     </a>
   </div>
 
-
   <div class="container">
-    <!-- Navbar need help-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-top">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#birds">Birds</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#dogs">Dogs</a>
+          <a class="nav-link" href="#dogs">Dogs<a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#cats">Cats</a>
@@ -98,10 +74,37 @@
     <div class="row">
       <div class="col">
         <h2 id="birds">Birds</h2>
-        <a href="https://en.wikipedia.org/wiki/Bird;" target="_blank">
-          <img src="photos/bird photo.jpg" alt="Bird Link" class="rounded" style="width:300px;height:300px;" />
-        </a>
-        <p><i><small>Click on the photo for more information on cats</small></i></p>
+        <!-- Carousel -->
+        <div id="bird" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#bird" data-slide-to="0" class="active"></li>
+            <li data-target="#bird" data-slide-to="1"></li>
+            <li data-target="#bird" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow need help-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="photos/bird photo.jpg" alt="Bird 1" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+              <img src="photos/bird photo 2.jpg" alt="Bird 2" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+              <img src="photos/bird photo 3.jpg" alt="Bird 3" width="300" height="300">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#bird" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#bird" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
         <br />
         <h3>Information on Birds</h3>
         <blockquote cite="https://en.wikipedia.org/wiki/Bird" class="blockquote text-info">
@@ -149,10 +152,37 @@
       </div>
       <div class="col">
         <h2 id="dogs">Dogs</h2>
-        <a href="https://en.wikipedia.org/wiki/Dog;" target="_blank">
-          <img src="photos/dog photo.jpg" alt="Dog Link" class="d-block rounded" style="width:300px;height:300px;" />
-        </a>
-        <p><i><small>Click on the photo for more information on dogs</small></i></p>
+        <!-- Carousel -->
+        <div id="dog" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#dog" data-slide-to="0" class="active"></li>
+            <li data-target="#dog" data-slide-to="1"></li>
+            <li data-target="#dog" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow need help-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="photos/dog photo.jpg" alt="Dog 1" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+              <img src="photos/dog photo 2.jpg" alt="Dog 2" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+              <img src="photos/dog photo 3.jpg" alt="Dog 3" width="300" height="300">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#dog" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#dog" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
         <br />
         <h3>Information on Dogs</h3>
         <blockquote cite="https://en.wikipedia.org/wiki/Dog" class="blockquote text-info">
@@ -183,9 +213,37 @@
       </div>
       <div class="col">
         <h2 id="cats">Cats</h2>
-        <a href="https://en.wikipedia.org/wiki/Cat;" target="_blank">
-          <img src="photos/cat photo.jpg" alt="Cat Link" class="rounded" style="width:300px;height:300px;" />
-        </a>
+        <!-- Carousel -->
+        <div id="cat" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#cat" data-slide-to="0" class="active"></li>
+            <li data-target="#cat" data-slide-to="1"></li>
+            <li data-target="#cat" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow need help-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="photos/cat photo.jpg" alt="Cat 1" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+              <img src="photos/cat photo 2.jpg" alt="Cat 2" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+              <img src="photos/cat photo 3.jpg" alt="Cat 3" width="300" height="300">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#cat" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#cat" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
         <p><i><small>Click on the photo for more information on birds</small></i></p>
         <br />
         <h3>Information on Cats</h3>
